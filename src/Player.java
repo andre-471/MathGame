@@ -2,6 +2,7 @@ public class Player {
 
     private String name;
     private int score;
+    private int streak;
 
     public Player(String name) {
         this.name = name;
@@ -16,11 +17,19 @@ public class Player {
         return name;
     }
 
+    public int getStreak() { return streak; }
+
     public void incrementScore() {
         score++;
     }
 
+    public void incrementStreak() { streak++; }
+
     public void reset() {
         score = 0;
+    }
+
+    public void resetStreak() {
+        streak = 0;
     }
 }
