@@ -42,7 +42,7 @@ public class MathGameUI {
             if (game.getWinner() != null) {  // check for null just to be safe (so we don't call a method on null)
                 System.out.print("The winner was " + game.getWinner().getName());   // print winner's name
                 System.out.println(" with a score of " + game.getWinner().getScore()); // print winner's score
-                System.out.println(game.getWinner().getName() + " has won " + game.getWinner().getScore() + " games in a row!");
+                System.out.println(game.getWinner().getName() + " has won " + game.getWinner().getStreak() + " games in a row!");
             }
             System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
             System.out.print("Want to play another round? y/n: ");

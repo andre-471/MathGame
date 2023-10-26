@@ -82,7 +82,7 @@ public class MathGame {
     public String getFormattedResults() {
         StringBuilder formattedResults = new StringBuilder();
         for (String[] oneResult : results) {
-            formattedResults.append(oneResult[0] + "had a score of " + oneResult[1] + " and a winning streak of " + oneResult[2] + "\n");
+            formattedResults.append(oneResult[0] + " had a score of " + oneResult[1] + " and a winning streak of " + oneResult[2] + "\n");
         }
         return formattedResults.toString();
     }
@@ -156,7 +156,7 @@ public class MathGame {
         if (winner == lastWinner) {
             winner.incrementStreak();
         } else {
-            winner.reset();
+            winner.resetStreak();
             winner.incrementStreak();
         }
     }
